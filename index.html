@@ -11,10 +11,11 @@
 <body>
     <span > </span>
     <header >
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <div class="icon">Manoj</div>
-            <ul class="menu-list">
-                <li><a href="#HOME">Home</a></li>
+            <div  onclick="clickMenu()" class="menu-bar"><i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i></div>
+            <ul class="menu-list" id="menuList">
+                <li><a href="#">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Skill">Skills</a></li>
                 <li><a href="#Project">Project</a></li>
@@ -24,7 +25,7 @@
     </header>
 
     <main >
-        <section class="home" id="#HOME">
+        <section class="home" id="#">
             <div class="text">
                 <p>Hello( ); I'm</p>
                 <h1 class="name">Manoj K</h1>
@@ -47,7 +48,7 @@
                 <p><span class="degree">Bachlore of Engineering - Mechanical Engineering</span> <br>
                 <span class="College">M.Kumarasamy College of Engineering, Karur.</span> <br>
             2020 - 2023</p>
-            <p><span class="degree">Diploma - Mechanical Engineering</span> <br>
+            <p><span class="degree"> Diploma - Mechanical Engineering </span> <br>
                 <span class="College">Kongunadu Polytechnic College, Trichy.</span> <br>
             2018 - 2020</p>
             <p><span class="degree">School Studies</span> <br>
@@ -63,18 +64,19 @@
         <section class="Skill">
             <h3> #_Languages_i_known </h3>
             <div class="Skill-box">
-                <p id="border-top">HTML</p>
-                <p>CSS</p>
-                <p>JAVASCRIPT</p>
-                <p>PYTHON</p>
-                <p>REACTJS</p>
-                <p>MYSQL</p>
-                <p>GITHUB</p>
-                <P>FIGMA</P>
+                <p > <i class="fa-brands fa-html5 fa-xl" style="color: #ff2600;"></i> HTML</p>
+                <p> <i class="fa-brands fa-css3-alt fa-xl" style="color: #4287ff;"></i> CSS</p>
+                <p> <i class="fa-brands fa-js fa-xl" style="color: #ffea00;"></i> JAVASCRIPT</p>
+                <p><i class="fa-brands fa-python fa-xl"></i> PYTHON</p>
+                <p> <i class="fa-brands fa-react fa-xl" style="color: #073178;"></i> REACTJS</p>
+                <p><i class="fa-solid fa-database fa-xl" style="color: #ad922e;"></i> MYSQL</p>
+                <p><i class="fa-brands fa-github fa-xl" style="color: #e8e8e8;"></i> GITHUB</p>
+                <P><i class="fa-brands fa-figma fa-xl" style="color: #ed0cbd;"></i> FIGMA</P>
             </div>
         </section>
         <!-------------Project section start----------------->
         <h1 class="title" id="Project">{ <span class="heading-text"> PROJECT </span> } </h1>
+        <h4 class="txt-heading">#_Projects_i_done</h4>
         <section class="project">
             <div class="pro-box">
                 <div class="pro-txt"><h2>Ecommers website</h2>
@@ -104,7 +106,7 @@
             </div>
                 <div class="pro-img"><img src="./images/databasemysql.jpeg" alt=""></div>
             </div>
-           <div class="pro-box" style="border: none;"><button>View More</button></div> 
+           <div class="pro-box" style="border: none;box-shadow: none; background-color: #11111b;"><button>View More</button></div> 
 
         </section>
         <!-------------project section end---------------------->
@@ -141,6 +143,6 @@
         <div style="text-align: center; background: black;">Design and Build by Manoj</div>
         </div>
     </main>
-    <a class="scrollup" href="#HOME ">Back to top</a>
+    <a class="scrollup" href="# ">Back to top</a>
 </body>
 </html>
