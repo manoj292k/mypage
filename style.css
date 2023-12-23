@@ -16,6 +16,9 @@ body{
     width: 100%;
     height: 70vh;
  }
+ .menu-bar{
+    display: none;
+ }
  nav{
     width: 75%;
     background-color: rgba(255, 255, 255, 0.079);
@@ -154,7 +157,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    padding: 5%;
+    padding: 10% 5%;
 }
 .education p{
     width: 45%;
@@ -210,12 +213,13 @@ body{
 .Skill-box{
     width: 70%;
     height: max-content;
-    padding: 10px;
+    padding: 50px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    padding: 30px 10px;
+    padding-bottom: 50px;
+    
 }
 .Skill p{
     font-size: x-large;
@@ -312,8 +316,8 @@ gap: 30px;
 }
 .contact .container{
     width: 40%;
-    padding: 30px 10px;
-    border: 1px solid #f38478;
+    padding: 50px 10px;
+    border: 2px solid #f38478;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -329,9 +333,12 @@ input{
     background-color: white;
     color: black;
     font-size: larger;
-    font-weight: bold;
     border-radius: 10px;
 }
+#textarea{
+    border-radius: 10px;
+}
+
 .container div{
     width: 80%;
     align-items: center;
@@ -339,7 +346,7 @@ input{
 
 }
 .container div button{
-    background-color: #e74c3c;
+    background-color: #eb0cf3;
     padding: 10px 25px;
     border-radius: 10px;
     border: none;
@@ -426,18 +433,29 @@ input{
         transition: 0.7s ease-out;
         
     }
+    li:hover{
+        box-shadow: none;
+        
+     }
     .nav{
         transition: 0.7s ease-in;
    
        height: 60px;
         
         }
-    .menu-bar{
-        background: transparent;
-        width: max-content;
-        height: auto;
-        margin-right: 10px;
-    }
+        .menu-bar {
+            background: transparent;
+            width: max-content;
+            height: auto;
+            margin-right: 10px;
+            display: block;
+            transition: 0.5s ease-in-out;
+        }
+        
+        .menu-bar-rotated {
+            transform: rotate(90deg);
+            transition: 0.5s ease-in;
+        }
     .text{
         align-items: center;
         width: 90%;
@@ -452,14 +470,12 @@ input{
          padding: 7px;
          
      }
-     .About{
-        flex-direction: no;
-     }
+    
      .about-img{
         display: none;
      }
      .about-txt{
-        width: 90%;
+        width: 80%;
         height: max-content;
         padding:10px 20px;
         font-size: small;
@@ -482,7 +498,7 @@ input{
         font-size: medium;
     }
     .Skill p{
-        width: 80%;
+        width: 100%;
     }
     .project{
         padding: 10px;
@@ -532,3 +548,25 @@ input{
     }
 
 }
+iframe{
+    display: none;
+}
+#preloader{
+    background: #0c0c13 url(./images/preload.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1100;
+    top: 0px;
+
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
