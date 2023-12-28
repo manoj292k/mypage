@@ -16,6 +16,9 @@ body{
     width: 100%;
     height: 70vh;
  }
+ .menu-bar{
+    display: none;
+ }
  nav{
     width: 75%;
     background-color: rgba(255, 255, 255, 0.079);
@@ -23,17 +26,14 @@ body{
     height: auto;
     padding: 20px;
     position: fixed;
-    top: 7%;
+    top: 3%;
     left: 15%;
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
  }
- .nav:hover{
-    background-color: black;
-    transition: 0.6s ease-in-out;
- }
+
  .icon{
     width: max-content;
     align-items: center;
@@ -157,20 +157,20 @@ body{
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
-    padding: 5%;
+    padding: 10% 5%;
 }
 .education p{
     width: 45%;
     height: max-content;
     text-align: center;
     padding: 20px 10px;
-    background-color: #11111b;
+    background-color: #0c0c13;
     border-radius: 10px;
     box-shadow: 0px 5px 8px black;
     transition: 0.5s ease-in-out;
 }
 .education p:hover{
-    background-color: rgb(2, 2, 56);
+    background-color:#11111b;
 }
 .degree{
     font-size: x-large;
@@ -213,58 +213,29 @@ body{
 .Skill-box{
     width: 70%;
     height: max-content;
-    padding: 10px;
+    padding: 50px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    padding: 30px 10px;
+    padding-bottom: 50px;
+    
 }
 .Skill p{
-    font-size: xx-large;
+    font-size: x-large;
     width: 40%;
+    font-weight: 700;
     padding: 20px 0px;
     height: max-content;
     text-align: center;
-    background-color: #11111b;
+    background-color: #0c0c13;
     border-radius: 10px;
     box-shadow: 2px 4px 5px black;
  
 }
-.Skill-box p ::before{
-    content: "";
-    position: absolute;
-    width: 30%;
-    height: 2px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradientforlanguage 5s ease infinite;
-    top: 0;
-    transition-duration: .5s;
-}
-.Skill-box p:hover::before{
-    width: 100%;
-    transition-duration: .5s;
-}
-@keyframes gradientforlanguage {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-.border-top{
-    position: absolute;
-    left: 30%;
-    right: 30%;
-    border: 2px solid white;
-}
+
 .Skill p:hover{
-    background: black;
+    background: #11111b;
     transition: 0.6s ease-in-out;
 }
 /*----------project-------------*/
@@ -283,20 +254,28 @@ gap: 30px;
     height: max-content;
     display: flex;
     justify-content: space-around;
-    border: 1px solid salmon;
-   padding: 30px;
+    border: 2px solid salmon;
+   padding: 35px;
    gap: 10px;
    border-radius: 10px;
    transition: 0.5s ease-in-out;
+   background-color: #0c0c13;
 }
 .pro-box:hover{
-    background-color:rgb(2, 2, 56);
+    background-color:#11111b;
 }
 .pro-txt{
     width: 70%;
     height: auto;
     background: transparent;
 
+}
+.txt-heading{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+    font-size: large;
+    color: violet;
 }
 .pro-txt h2{
     background-color: transparent;
@@ -315,6 +294,7 @@ gap: 30px;
     width: 50%;
     height: 200px;
     overflow: hidden;
+    border-radius: 10px;
 }
 .pro-img img{
     width: 100%;
@@ -336,8 +316,8 @@ gap: 30px;
 }
 .contact .container{
     width: 40%;
-    padding: 30px 10px;
-    border: 1px solid #f38478;
+    padding: 50px 10px;
+    border: 2px solid #f38478;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -353,9 +333,12 @@ input{
     background-color: white;
     color: black;
     font-size: larger;
-    font-weight: bold;
     border-radius: 10px;
 }
+#textarea{
+    border-radius: 10px;
+}
+
 .container div{
     width: 80%;
     align-items: center;
@@ -363,7 +346,7 @@ input{
 
 }
 .container div button{
-    background-color: #e74c3c;
+    background-color: #eb0cf3;
     padding: 10px 25px;
     border-radius: 10px;
     border: none;
@@ -426,11 +409,53 @@ input{
     
     .home{
         width: 100%;
-        height: 100vh;
+        height: 80vh;
+    }
+   
+    .icon{
+        width: 80%;
     }
     li{
-        display: none;
+        width: 80%;
+       padding: 20%;
+        text-align: center;
     }
+    
+    nav{
+        display: flex;
+        width: 90%;
+        height: 90vh;
+        overflow: hidden;
+        transform: translate(-10%, 0%);
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.7s ease-out;
+        
+    }
+    li:hover{
+        box-shadow: none;
+        
+     }
+    .nav{
+        transition: 0.7s ease-in;
+   
+       height: 60px;
+        
+        }
+        .menu-bar {
+            background: transparent;
+            width: max-content;
+            height: auto;
+            margin-right: 10px;
+            display: block;
+            transition: 0.5s ease-in-out;
+        }
+        
+        .menu-bar-rotated {
+            transform: rotate(90deg);
+            transition: 0.5s ease-in;
+        }
     .text{
         align-items: center;
         width: 90%;
@@ -445,14 +470,12 @@ input{
          padding: 7px;
          
      }
-     .About{
-        flex-direction: no;
-     }
+    
      .about-img{
         display: none;
      }
      .about-txt{
-        width: 100%;
+        width: 80%;
         height: max-content;
         padding:10px 20px;
         font-size: small;
@@ -475,7 +498,7 @@ input{
         font-size: medium;
     }
     .Skill p{
-        width: 80%;
+        width: 100%;
     }
     .project{
         padding: 10px;
@@ -484,7 +507,8 @@ input{
         width: 80%;
         flex-wrap: wrap;
         flex-direction: column-reverse;
-        padding: 10px;
+        padding: 15px;
+        box-shadow: 0px 0px 5px #e74c3c;
     }
     .pro-txt{
         width: 95%;
@@ -522,4 +546,27 @@ input{
     .scrollup{
         margin-right: -20px;
     }
+
 }
+iframe{
+    display: none;
+}
+#preloader{
+    background: #0c0c13 url(./images/preload.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1100;
+    top: 0px;
+
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
