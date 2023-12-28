@@ -1,3 +1,4 @@
+//menubar process
 function clickMenu() {
     var box = document.querySelector("nav");
     box.classList.toggle("nav");
@@ -16,7 +17,7 @@ function clickMenu() {
 }
 
 
-
+//preloder process
 document.addEventListener("DOMContentLoaded", function() {
     var loader = document.getElementById("preloader");
 
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
+//scroll transition process
 document.addEventListener("DOMContentLoaded", function () {
     var fadeElements = document.querySelectorAll(".fade-in");
   
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkFade);
   });
 
-
+//window alert message
   function message(){
     var submit = document.getElementById("textarea").value;
 
