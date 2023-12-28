@@ -58,3 +58,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", checkFade);
   });
+
+
+  function message(){
+    var submit = document.getElementById("textarea").value;
+
+    if (submit.length >=  2) {
+    window.alert("Thank you for your message : )");
+    console.log("success",submit);
+    } 
+    else {
+    window.alert("Invalid or Your message is to short");
+    console.log("failed",submit);
+    }
+}
