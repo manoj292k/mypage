@@ -24,7 +24,7 @@ body{
     background-color: rgba(255, 255, 255, 0.079);
     backdrop-filter: blur(50px);
     height: auto;
-    padding: 20px;
+    padding: 15px ;
     position: fixed;
     top: 3%;
     left: 15%;
@@ -138,11 +138,16 @@ body{
     font-size: small;
 }
 .about-img{
-    width: 30%;
+    width: 25%;
     height: max-content;
     padding: 10%;
-    border: 1px solid white;
+    border-radius: 30px ;
+    box-shadow: 0px 0px 3px #11111b;
+    overflow: hidden;
+    background: url(images/cartoonmanoj.jpg) no-repeat;
+    background-size: cover;
 }
+
 .Edu-title{
     width: 80%;
     text-align: center;
@@ -346,10 +351,12 @@ input{
 
 }
 .container div button{
-    background-color: #eb0cf3;
-    padding: 10px 25px;
-    border-radius: 10px;
-    border: none;
+    padding: 5px 15px;
+    margin-left: 20%;
+    box-shadow: 4px 5px violet;
+    opacity: 1;
+    color: white;
+    cursor: pointer;
 }
 .footer{
     width: 100%;
