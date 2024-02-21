@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*, html{
-    background-color: #11111b;
+ html{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#242433 ,#0c0c13,#000000 ) fixed;
+    scroll-behavior: smooth;
+    
+    
+}
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,18 +15,18 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-body{
-    background-color:#11111b ;
-    
-}
+
+
  .home{
     width: 100%;
-    height: 70vh;
+    height: 100vh;
+    background-color: transparent;
  }
  .menu-bar{
     display: none;
  }
  nav{
+    background-color: transparent;
     width: 75%;
     background-color: rgba(255, 255, 255, 0.079);
     backdrop-filter: blur(50px);
@@ -66,51 +73,50 @@ body{
  }
  .text{
    align-items: center;
-   width: 50%;
-   margin-left:10%;
+   width: 60%;
+   margin-left:7%;
    margin-top: 15%;
    font-size: x-large;
+   background-color: transparent;
  }
-.name,.roll{
+ .home-img{
+    position: relative;
+    left: 710px;
+    top: -460px;
+    z-index: -21;
+ }
+ .name{
+    font-size: 100px;
+    
+    background:linear-gradient(to right, orange,white,rgb(245, 133, 152), rgb(184, 59, 184));
+    display: inline; /* Displays the text inline with the background image */
+    color: transparent; /* Hides the text by making it transparent */
+    -webkit-background-clip: text; /* Applies background to the text */
+    background-clip: text; 
+ }
+.roll{
     font-size: 65px;
     font-weight: bold;
+    background: rgb(230, 214, 214)
     
 }
 
-
-@keyframes gradientMovement {
-    0% {
-        color: #3498db; /* Initial text color (blue) */
-        background-position: 0% 50%; /* Initial background position */
-    }
-    50% {
-        color: #e74c3c; /* Midpoint text color (red) */
-        background-position: 100% 50%; /* Midpoint background position */
-    }
-    100% {
-        color: #3498db; /* Final text color (blue) */
-        background-position: 0% 50%; /* Final background position */
-    }
-}
-
-.name, .roll,.heading-text {
-    background: linear-gradient(90deg, #3498db, #e74c3c); /* Initial gradient for background */
-    background-size: 200% 200%; /* Background size for animation */
-    animation: gradientMovement 4s infinite; /* Animation duration: 4 seconds, infinite loop */
+ .roll,.heading-text {
+ /* Animation duration: 4 seconds, infinite loop */
     color: transparent; /* Make text transparent */
     background-clip: text;
     -webkit-background-clip: text;
+    text-shadow: 1px white;
 }
 .home-txt{
     font-size: large;
+    background-color: transparent;
 }
 .text button{
-    padding: 5px 15px;
-    margin-left: 20%;
-    box-shadow: 4px 5px violet;
-    opacity: 1;
-    color: white;
-    cursor: pointer;
+    background: violet;
+    padding: 5px;
+    border-radius: 10px;
+   
 }
 .text button:hover{
     box-shadow: 0px 0px violet;
@@ -125,37 +131,39 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 .title{
-    text-align: center;
+    text-align: left;
     padding: none;
-    font-size: 40px;
+    font-size: 70px;
+    padding-left:40px ;
 }
 .about-txt{
-    width: 50%;
+    width: 60%;
     height: max-content;
-    padding: 5% 10%;
-    font-size: small;
+    padding: 5% 5%;
+    font-size: large;
 }
 .about-img{
-    width: 25%;
+    width: 30%;
     height: max-content;
-    padding: 10%;
+    position: relative;
+    right: 10%;
     border-radius: 30px ;
-    box-shadow: 0px 0px 3px #11111b;
-    overflow: hidden;
-    background: url(images/cartoonmanoj.jpg) no-repeat;
-    background-size: cover;
+   
+    
 }
 
 .Edu-title{
-    width: 80%;
-    text-align: center;
-    padding: 20px;
-    font-size: xx-large;
+    width: 100%;
+    text-align: left;
+    padding-left:40px ;
+    font-size: 70px;
+    
 }
 .education{
-    width: 70%;
+    width: 100%;
     height: max-content;
     display: flex; 
     justify-content: space-around;
@@ -165,12 +173,14 @@ body{
     padding: 10% 5%;
 }
 .education p{
-    width: 45%;
-    height: max-content;
+    width: 70%;
+    height: 200px;
     text-align: center;
-    padding: 20px 10px;
-    background-color: #0c0c13;
-    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid violet;
+    border-radius: 30px;
     box-shadow: 0px 5px 8px black;
     transition: 0.5s ease-in-out;
 }
@@ -194,13 +204,19 @@ body{
     opacity: 1;
     color: white;
     cursor: pointer; 
+    background-color: black;
 }
 .about-txt button:hover{
     box-shadow: 0px 0px violet;
     transition: 0.3s ease-in-out;
 }
 /*----------------skill section-----------------*/
-
+.skilltitle{
+    text-align: center;
+    padding: none;
+    font-size: 50px;
+    
+}
 .Skill{
     width: 100%;
     height: auto;
@@ -208,8 +224,9 @@ body{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
-.Skill h3{
+.Skill h3, .skillhead{
     text-align: center;
     padding: 20px 0px;
     width: 100%;
@@ -233,14 +250,14 @@ body{
     padding: 20px 0px;
     height: max-content;
     text-align: center;
-    background-color: #0c0c13;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 2px 4px 5px black;
+    border: 1px solid rgb(187, 224, 23);
  
 }
 
 .Skill p:hover{
-    background: #11111b;
+    background: #000;
     transition: 0.6s ease-in-out;
 }
 /*----------project-------------*/
@@ -255,25 +272,38 @@ padding: 30px;
 gap: 30px;
 }
 .pro-box{
-    width: 60%;
+    width: 70%;
     height: max-content;
     display: flex;
     justify-content: space-around;
-    border: 2px solid salmon;
-   padding: 35px;
+    border: 1px solid salmon;
+   padding: 45px;
    gap: 10px;
-   border-radius: 10px;
+   border-radius: 30px;
    transition: 0.5s ease-in-out;
-   background-color: #0c0c13;
+   
 }
 .pro-box:hover{
-    background-color:#11111b;
+    background-color:#000000;
 }
 .pro-txt{
     width: 70%;
     height: auto;
-    background: transparent;
-
+}
+.pro-more{
+    width: 70%;
+    text-align: center;
+    
+}
+.pro-more button{
+    background-color: violet;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pro-more button:hover{
+    background-color: rgb(224, 224, 224);
+    color: black;
 }
 .txt-heading{
     text-align: center;
@@ -281,6 +311,7 @@ gap: 30px;
     padding: 20px 0px;
     font-size: large;
     color: violet;
+    
 }
 .pro-txt h2{
     background-color: transparent;
@@ -292,7 +323,7 @@ gap: 30px;
     border-radius: 10px;
 }
 .pro-txt p{
-    color: gray;
+    color: rgb(165, 145, 145);
     background-color: transparent;
 }
 .pro-img{
@@ -308,6 +339,7 @@ gap: 30px;
 .pro-box button{
     padding: 10px;
     border-radius: 10px;
+    background-color: black;
 }
 /*-----------------contact--------------------*/
 .contact{
@@ -318,12 +350,13 @@ gap: 30px;
     gap: 50px;
     flex-wrap: wrap;
     align-items: center;
+
 }
 .contact .container{
     width: 40%;
     padding: 50px 10px;
     border: 2px solid #f38478;
-    border-radius: 10px;
+    border-radius: 30px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -335,17 +368,29 @@ gap: 30px;
 input{
     width: 100%;
     height: 3rem;
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
     font-size: larger;
-    border-radius: 10px;
+
+    border: none;
+    border-bottom: 1px solid white;
 }
 #textarea{
     border-radius: 10px;
+    background-color: transparent;
 }
 
+
+.contact div{
+    width: 30%;
+    height: auto;
+}
+.contact img{
+    width: 400px;
+    height: auto;
+}
 .container div{
-    width: 80%;
+    width: 83%;
     align-items: center;
     text-align: center;
 
@@ -357,6 +402,7 @@ input{
     opacity: 1;
     color: white;
     cursor: pointer;
+    background: black;
 }
 .footer{
     width: 100%;
@@ -416,7 +462,8 @@ input{
     
     .home{
         width: 100%;
-        height: 80vh;
+        height: auto;
+        padding: 30px 0px;
     }
    
     .icon{
@@ -466,26 +513,36 @@ input{
     .text{
         align-items: center;
         width: 90%;
+
         margin-left:10%;
         margin-top: 55%;
         font-size: large;
-        padding: 8px;
+        padding: 50px 5px;
       }
-     .name,.roll{
+      .name{
+        font-size: 80px;
+        font-weight: bold;}
+     .roll{
          font-size: 40px;
-         font-weight: bold;
-         padding: 7px;
+         padding: 5px;
          
      }
-    
+     .home-img{
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: -21;
+     }
      .about-img{
         display: none;
      }
      .about-txt{
-        width: 80%;
+        width: 90%;
+        line-height: 2;
         height: max-content;
-        padding:10px 20px;
-        font-size: small;
+        padding:10px;
+        font-size: medium;
         text-align: justify;
     }
     .about-txt button{
@@ -494,8 +551,11 @@ input{
     }
     .education p{
         width: 100%;
-        height: max-content;
+        height: auto;
         font-size: small;
+        column-gap: 10px;
+        padding: 10px 5px;
+        justify-content: space-around;
     }
     .degree{
         font-size: large;
@@ -553,7 +613,13 @@ input{
     .scrollup{
         margin-right: -20px;
     }
-
+    .contact div{
+        width: 80%;
+    }
+    .contact img{
+        width: 100%;
+        height: 100%;
+    }
 }
 iframe{
     display: none;
@@ -569,8 +635,8 @@ iframe{
 }
 .fade-in {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 1s ease-in;
   }
   
   .fade-in.fade-in-visible {
