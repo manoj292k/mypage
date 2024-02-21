@@ -82,7 +82,7 @@
  }
  .home-img{
     position: relative;
-    left: 710px;
+    left: 50%;
     top: -460px;
     z-index: -21;
  }
@@ -132,6 +132,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    height: auto;
 
 }
 .title{
@@ -139,6 +141,7 @@
     padding: none;
     font-size: 70px;
     padding-left:40px ;
+    width: 100%;
 }
 .about-txt{
     width: 60%;
@@ -150,7 +153,7 @@
     width: 30%;
     height: max-content;
     position: relative;
-    right: 10%;
+    right: 8%;
     border-radius: 30px ;
    
     
@@ -165,7 +168,7 @@
 }
 .education{
     width: 100%;
-    height: max-content;
+    height: auto;
     display: flex; 
     justify-content: space-around;
     flex-wrap: wrap;
@@ -273,7 +276,7 @@ padding: 30px;
 gap: 30px;
 }
 .pro-box{
-    width: 70%;
+    width: 80%;
     height: max-content;
     display: flex;
     justify-content: space-around;
@@ -354,7 +357,7 @@ gap: 30px;
 
 }
 .contact .container{
-    width: 40%;
+    width: 35%;
     padding: 50px 10px;
     border: 2px solid #f38478;
     border-radius: 30px;
@@ -459,7 +462,7 @@ input{
     background-color: transparent;
 }
 /*-----------------------media querry 500px---------------*/
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     
     .home{
         width: 100%;
@@ -510,6 +513,10 @@ input{
         .menu-bar-rotated {
             transform: rotate(90deg);
             transition: 0.5s ease-in;
+        }
+        .title{
+            padding: 5px;
+            font-size: auto;
         }
     .text{
         align-items: center;
@@ -609,11 +616,11 @@ input{
         text-align: center;
     }
     input{
-        width: 80%;
+        width: 70%;
         height: 2.5rem;
     }
     #textarea{
-        width: 80%;
+        width: 70%;
         height: 200px;
         border-radius: 10px;
     }
@@ -648,7 +655,7 @@ iframe{
 
 }
 .fade-in {
-    opacity: 0.2;
+    opacity: 0.3;
     transform: translateY(30px);
     transition: opacity 0.5s ease-in, transform 1s ease-in;
   }
